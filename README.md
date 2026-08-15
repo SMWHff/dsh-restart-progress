@@ -47,11 +47,11 @@ dsh plugin --profile web add "github:SMWHff/dsh-restart-progress"
 
 | 变量 | 默认值 | 说明 |
 |---|---|---|
-| `$logDir` | `C:\Users\mengf\.dsh\logs` | 日志与标志文件目录 |
-| `$env:DSH_HOME` | `C:\Users\mengf\.dsh` | DSH 数据目录 |
+| `$logDir` | `C:\Users\SMWHff\.dsh\logs` | 日志与标志文件目录 |
+| `$env:DSH_HOME` | `C:\Users\SMWHff\.dsh` | DSH 数据目录 |
 | `$node` | `C:\Program Files\nodejs\node.exe` | node.exe 实际路径 |
 | `$bin` | `…\node_modules\@deepseek-ai\dsh\lib\bin.js` | dsh bin.js 实际路径 |
-| `-WorkingDirectory` | `C:\Users\mengf` | 启动工作目录 |
+| `-WorkingDirectory` | `C:\Users\SMWHff` | 启动工作目录 |
 
 ### 3. 执行重启
 
