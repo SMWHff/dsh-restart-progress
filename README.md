@@ -11,6 +11,14 @@ DeepSeek Harness (DSH) Web 重启体验插件：**页内遮罩 + 分离式重启
 - 🛡️ **防死循环**：只有在「服务在线 + 重启任务收尾完成」双条件满足时才刷新页面，杜绝 reload 死循环。
 - 🚀 **分离式执行**：真正的杀旧+启新动作交给 Windows 计划任务执行，脱离 dsh 进程树——即使由 agent 在会话内触发重启，也不会把执行脚本自己杀死（`taskkill /T` 杀不到任务体）。
 
+## 效果展示
+
+| 遮罩刚出现 | 服务已断，等待恢复 | 服务恢复中 | 重启完成，页面已刷新 |
+|---|---|---|---|
+| ![遮罩早期](docs/screenshots/1-overlay-early.png) | ![等待恢复](docs/screenshots/2-waiting-recover.png) | ![即将刷新](docs/screenshots/3-about-to-refresh.png) | ![恢复后](docs/screenshots/4-after-restart.png) |
+
+遮罩右上角有叉叉按钮，页面底部有「按 Esc 可强制退出此界面」提示，两种方式都能随时退出。
+
 ## 安装
 
 ### 1. 安装插件
