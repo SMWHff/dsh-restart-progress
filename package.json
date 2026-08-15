@@ -1,0 +1,37 @@
+{
+  "name": "dsh-restart-progress",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "In-page restart overlay + detached restart script for DeepSeek Harness (DSH) Web: shows a full-screen spinner overlay in the current page the moment a restart starts, auto-reloads when the server is back, and notifies the originating session so the agent reports 'restarted' by itself. Esc / close button to bail out.",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "restart",
+    "overlay",
+    "spinner"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+# dsh-restart-progress bundle patch: mount the host plugin under its
+# package name. The host half is a no-op; the real surface is the client half
+# declared via package.json dsh.client.
+- insert:
+    - id: dsh-restart-progress
+      name: 'dsh-restart-progress'
